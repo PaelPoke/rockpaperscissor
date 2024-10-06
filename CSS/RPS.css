@@ -6,6 +6,10 @@ body {
     color: #333;
 }
 
+#container{
+    
+}
+
 h1 {
     font-size: 4em; /* Large font for desktop */
     margin-bottom: 20px;
@@ -110,9 +114,27 @@ p {
 }
 
 @media (max-width:  400px) {
+    h1{
+        margin: 20px;
+        font-size: 30px;
+    }
+
     .statistics-box {
         width: 100%; 
         font-size: 100%;
+    }
+
+    #container{
+        width: 300px;
+    }
+
+    button{
+        width: 40%;
+        font-size: 100%;
+    }
+
+    #result{
+        font-size: 15px;
     }
 }
 
