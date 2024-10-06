@@ -131,10 +131,15 @@ p {
     button{
         width: 40%;
         font-size: 100%;
+        margin: 0px;
     }
 
     #result{
         font-size: 15px;
+    }
+
+    #streakInfo{
+        font-size: 20px;
     }
 }
 
