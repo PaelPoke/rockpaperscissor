@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    font-size: 4em; /* Large font for desktop */
+    margin-bottom: 20px;
+    color: #4CAF50; /* Green color for the heading */
+}
+
+/* Button container flex layout for both desktop and mobile */
+.button-container {
+    font-size: 1.5em; /* Base font size */
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
+    justify-content: center; /* Center align buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    margin: 10px;
+    font-size: 1.5em; /* Use relative units for responsiveness */
+    padding: 15px 30px; /* Increased padding for easier tapping on mobile */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Added transform transition */
+    background-color: #008CBA; /* Blue background */
+    color: white; /* White text color */
+    width: 180px; /* Fixed width for buttons */
+    min-width: 150px; /* Minimum width for smaller screens */
+}
+
+button:hover {
+    background-color: #005f73; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase button size */
+}
+
+#result {
+    font-size: 2.5em; /* Adjusted for responsiveness */
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 10px;
+    background-color: white; /* White background for the result */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#streakInfo {
+    font-size: 1.5em; /* Adjusted for responsiveness */
+}
+
+.statistics-box {
+    position: fixed; /* Keep it fixed at the bottom */
+    font-size: 1.5em; /* Adjusted for responsiveness */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width to prevent overflow */
+    border: solid 1px #4CAF50; /* Green border */
+    border-radius: 10px;
+    left: 0px;
+    bottom: 0px; /* Adjusted for better spacing */
+    padding: 10px;
+    background-color: white; /* White background for statistics box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#statistics-data {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+p {
+    margin: 5px 0; /* Consistent margin for paragraphs */
+}
+
+#winPercentage {
+    font-weight: bold; /* Bold text for win percentage */
+    margin-top: 10px; /* Space above win percentage */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3em; /* Smaller heading for mobile */
+    }
+
+    .button-container {
+        font-size: 1.2em; /* Smaller font for buttons on mobile */
+    }
+
+    button {
+        width: 80%; /* Make buttons responsive on mobile */
+        padding: 12px 0; /* Reduced padding for smaller screens */
+    }
+
+    #result {
+        font-size: 2em; /* Smaller result font for mobile */
+    }
+
+    .statistics-box {
+        width: 95%; /* More width on mobile for the statistics box */
+    }
+}
+
+@media (min-width: 601px) {
+    .button-container {
+        font-size: 1.5em; /* Larger button font for desktop */
+    }
+}
